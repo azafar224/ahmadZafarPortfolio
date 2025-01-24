@@ -116,6 +116,8 @@ a {
 
 li {
   list-style: none;
+  color: var(--white-2); /* Ensure individual list items are white */
+  font-weight: var(--fw-300);
 }
 
 img,
@@ -274,7 +276,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--onyx);
+  background: var(--orange-yellow-crayola);
   border-radius: 5px;
 }
 
@@ -609,6 +611,26 @@ main {
   scroll-snap-type: inline mandatory;
 }
 
+/* Custom scrollbar styles */
+.testimonials-list::-webkit-scrollbar {
+  height: 8px; /* Adjust the scrollbar thickness */
+}
+
+.testimonials-list::-webkit-scrollbar-track {
+  background: var(--jet); /* Background for the scrollbar track */
+  border-radius: 6px;
+}
+
+.testimonials-list::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola); /* Scrollbar thumb color */
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25); /* Add depth */
+}
+
+.testimonials-list::-webkit-scrollbar-thumb:hover {
+  background: var(--vegas-gold); /* Lighter shade on hover */
+}
+
 .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
@@ -786,6 +808,26 @@ main {
   scroll-padding-inline: 25px;
 }
 
+/* Custom scrollbar styles */
+.clients-list::-webkit-scrollbar {
+  height: 8px; /* Adjust the scrollbar thickness */
+}
+
+.clients-list::-webkit-scrollbar-track {
+  background: var(--jet); /* Background for the scrollbar track */
+  border-radius: 6px;
+}
+
+.clients-list::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola); /* Scrollbar thumb color */
+  border-radius: 6px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25); /* Add depth */
+}
+
+.clients-list::-webkit-scrollbar-thumb:hover {
+  background: var(--vegas-gold); /* Lighter shade on hover */
+}
+
 .clients-item {
   min-width: 50%;
   scroll-snap-align: start;
@@ -872,9 +914,19 @@ main {
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--white-2); /* Update this to the white color variable */
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.timeline-text ul {
+  color: var(--white-2); /* Make list items white */
+}
+
+.timeline-text li {
+  color: var(--white-2); /* Ensure individual list items are white */
+  font-weight: var(--fw-300);
+  margin-bottom: 5px; /* Optional for better spacing between items */
 }
 
 /**
